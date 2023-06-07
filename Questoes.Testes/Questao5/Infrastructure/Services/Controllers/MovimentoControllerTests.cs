@@ -7,7 +7,6 @@ using NSubstitute;
 using Questao5.Application.Dtos;
 using Questao5.Application.Services.Interfaces;
 using Questao5.Domain.Enumerators;
-using Questoes.Testes.Shared.Extensions;
 using Questao5.Infrastructure.Services.Controllers;
 
 namespace Questoes.Testes.Questao5.Infrastructure.Services.Controllers
