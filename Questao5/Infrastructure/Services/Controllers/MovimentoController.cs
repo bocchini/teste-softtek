@@ -18,10 +18,10 @@ namespace Questao5.Infrastructure.Services.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> PostMovimento(MovimentoDto movimento)
+        public async Task<IActionResult> Movimentacao(MovimentoDto movimento)
         {
             var idMovimento = await _service.AdicionaMovimento(movimento);
-            if (idMovimento == null || idMovimento == MensagensErroContasCorrente.ContaInativa || idMovimento == MensagensErroContasCorrente.ContaInativa)
+            if (idMovimento == null || idMovimento == MensagensErroContasCorrente.ContaInativa || idMovimento == MensagensErroContasCorrente.ContaInvalida)
             {
                 return BadRequest(JsonConvert.SerializeObject(new {Error= idMovimento}));
             }

@@ -10,7 +10,9 @@ namespace Questao5.Domain.Entities
         public string DataMovimento { get; private set; }
         public string TipoMovimento { get; private set; }        
         public double Valor { get; private set; }
-        public ContaCorrente ContaCorrente { get; set; }     
+        public ContaCorrente ContaCorrente { get; set; }
+
+        public Movimento(string idContaCorrente) : base(idContaCorrente) { }
 
         public Movimento(string idContaCorrente, string idMovimento) : base(idContaCorrente)
         {
