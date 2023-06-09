@@ -40,7 +40,7 @@ namespace Questoes.Testes.Questao5.Infrastructure.Services.Controllers
         }
 
         [Fact]
-        public async void Deve_RetornarBadRequestEINVALID_ACCOUNT_QuandoAContaForIvalidaa()
+        public async void Deve_RetornarBadRequestEINVALID_ACCOUNT_QuandoAContaForIvalida()
         {
             _movimentoService.AdicionaMovimento(Arg.Any<MovimentoDto>()).Returns(MensagensErroContasCorrente.ContaInvalida);
             var movimentacaoDto = new MovimentoDto { IdContaCorrente = _faker.Random.String(), TipoMovimento = "C", Valor = _faker.Random.Double(0, 1) };
