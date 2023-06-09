@@ -23,7 +23,7 @@ namespace Questao5.Infrastructure.Services.Controllers
         public async Task<IActionResult> Get(string idContaCorrente)
         {
             var validar = await _validadorContaCorrenteService.Validar(idContaCorrente);
-            if (validar == MensagensErroContasCorrente.ContaInativa || validar == MensagensErroContasCorrente.ContaInativa)
+            if (validar == MensagensErroContasCorrente.ContaInativa || validar == MensagensErroContasCorrente.ContaInvalida)
             {
                 return BadRequest(JsonConvert.SerializeObject(new { Error = validar }));
             }
