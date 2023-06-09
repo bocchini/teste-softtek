@@ -1,20 +1,13 @@
 ﻿using Bogus;
-using FluentAssertions;
-using FluentAssertions.Execution;
-using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
 using NSubstitute;
+using Newtonsoft.Json;
+using FluentAssertions;
+using Microsoft.AspNetCore.Mvc;
 using Questao5.Application.Dtos;
-using Questao5.Application.Services;
-using Questao5.Application.Services.Interfaces;
-using Questao5.Domain.Entities;
+using FluentAssertions.Execution;
 using Questao5.Domain.Enumerators;
+using Questao5.Application.Services.Interfaces;
 using Questao5.Infrastructure.Services.Controllers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Questoes.Testes.Questao5.Infrastructure.Services.Controllers
 {
