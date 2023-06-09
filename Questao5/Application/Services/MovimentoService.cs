@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
 using Questao5.Domain.Entities;
 using Questao5.Application.Dtos;
+using Questao5.Domain.Enumerators;
 using Questao5.Application.Services.Interfaces;
 using Questao5.Infrastructure.Repositorio.Interfaces;
-using Questao5.Domain.Enumerators;
 
 namespace Questao5.Application.Services
 {
